@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BHY-Cm-iHf">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qfB-QG-HZd">
+            <objects>
+                <viewController id="BHY-Cm-iHf" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qbh-I5-Ytj"/>
+                        <viewControllerLayoutGuide type="bottom" id="DVU-8s-azi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dKt-GP-zjQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="69" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="PNc-oR-nzr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="550"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="69" id="pD6-Ha-TGm" customClass="TableViewCell">
+                                        <rect key="frame" x="0.0" y="22" width="600" height="69"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pD6-Ha-TGm" id="7h6-x5-DnF">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="68.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o6-VL-zmp">
+                                                    <rect key="frame" x="541" y="10" width="44" height="44"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="44" id="BPi-Bo-z9P"/>
+                                                        <constraint firstAttribute="height" constant="44" id="qyn-wd-mIq"/>
+                                                    </constraints>
+                                                    <state key="normal" image="TabCartSelected.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="btnCellClick:" destination="BHY-Cm-iHf" eventType="touchUpInside" id="ghe-IP-Ufb"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="CFz-w9-oNc">
+                                                    <rect key="frame" x="10" y="10" width="48" height="48.5"/>
+                                                    <animations/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="48" id="ize-cC-YBk"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="4o6-VL-zmp" secondAttribute="trailing" constant="15" id="8Wh-PP-sj4"/>
+                                                <constraint firstAttribute="bottom" secondItem="CFz-w9-oNc" secondAttribute="bottom" constant="10" id="9k8-Ae-4Ct"/>
+                                                <constraint firstItem="CFz-w9-oNc" firstAttribute="top" secondItem="7h6-x5-DnF" secondAttribute="top" constant="10" id="AHQ-Jz-gH5"/>
+                                                <constraint firstItem="4o6-VL-zmp" firstAttribute="top" secondItem="7h6-x5-DnF" secondAttribute="top" constant="10" id="JzH-cN-Lew"/>
+                                                <constraint firstItem="CFz-w9-oNc" firstAttribute="leading" secondItem="7h6-x5-DnF" secondAttribute="leading" constant="10" id="uzi-4T-QmA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BHY-Cm-iHf" id="Sbp-Hf-L1X"/>
+                                    <outlet property="delegate" destination="BHY-Cm-iHf" id="s0f-83-FDm"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_shoppingCart.png" translatesAutoresizingMaskIntoConstraints="NO" id="jUk-vh-szX">
+                                <rect key="frame" x="540" y="540" width="50" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="HQy-Bw-pYi"/>
+                                    <constraint firstAttribute="height" constant="50" id="OwL-TR-Ori"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PNc-oR-nzr" secondAttribute="bottom" constant="50" id="1sk-Nc-87F"/>
+                            <constraint firstItem="PNc-oR-nzr" firstAttribute="leading" secondItem="dKt-GP-zjQ" secondAttribute="leading" id="6wN-YO-vya"/>
+                            <constraint firstItem="PNc-oR-nzr" firstAttribute="top" secondItem="dKt-GP-zjQ" secondAttribute="top" id="KVc-Dl-RAp"/>
+                            <constraint firstAttribute="trailing" secondItem="PNc-oR-nzr" secondAttribute="trailing" id="UBO-Ac-tXc"/>
+                            <constraint firstAttribute="trailing" secondItem="jUk-vh-szX" secondAttribute="trailing" constant="10" id="u84-hd-IdC"/>
+                            <constraint firstAttribute="bottom" secondItem="jUk-vh-szX" secondAttribute="bottom" constant="10" id="vxW-a2-sFf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f2K-NR-zBN"/>
+                    <connections>
+                        <outlet property="car" destination="jUk-vh-szX" id="Z1f-fX-JBX"/>
+                        <outlet property="tableView" destination="PNc-oR-nzr" id="zUa-M8-gmM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bgn-3y-3k5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1174" y="312"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabCartSelected.png" width="30" height="30"/>
+        <image name="icon_shoppingCart.png" width="500" height="500"/>
+        <image name="test01.jpg" width="491" height="686"/>
+    </resources>
+</document>
