@@ -1,0 +1,10 @@
+UserData/AppDataSyncRecords
+UserData/IDESourceControlAuthors
+UserData/KeyBindings/Default.idekeybindings
+UserData/*.xcuserstate
+UserData/IDENamedTabStateContexts.plist
+UserData/SearchScopes.xcsclist
+UserData/ServerBots.plist
+Backup/
+*.bak
+UserData/IB Support/Simulator Devices/
