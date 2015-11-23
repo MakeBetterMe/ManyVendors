@@ -7,7 +7,8 @@
 //
 
 #import "WMProgressView.h"
-@implementation WMProgressView {
+@implementation WMProgressView
+{
     int     sign;
     CGFloat gap;
     CGFloat step;

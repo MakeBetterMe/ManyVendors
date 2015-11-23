@@ -17,19 +17,25 @@
     CGFloat _targetX;
     BOOL    _animate;
 }
-@property (nonatomic, strong, readwrite) UIViewController *currentViewController;
+@property (nonatomic, strong, readwrite) UIViewController *currentViewController;/**<当前正在显示的vc*/
 @property (nonatomic, weak) WMMenuView *menuView;
 @property (nonatomic, weak) UIScrollView *scrollView;
+
 // 用于记录子控制器view的frame，用于 scrollView 上的展示的位置
 @property (nonatomic, strong) NSMutableArray *childViewFrames;
+
 // 当前展示在屏幕上的控制器，方便在滚动的时候读取 (避免不必要计算)
 @property (nonatomic, strong) NSMutableDictionary *displayVC;
+
 // 用于记录销毁的viewController的位置 (如果它是某一种scrollView的Controller的话)
 @property (nonatomic, strong) NSMutableDictionary *posRecords;
+
 // 用于缓存加载过的控制器
 @property (nonatomic, strong) NSCache *memCache;
+
 // 收到内存警告的次数
 @property (nonatomic, assign) int memoryWarningCount;
+
 @end
 
 @implementation WMPageController
@@ -90,12 +96,12 @@
     }
 }
 
-- (void)setViewFrame:(CGRect)viewFrame {
-    _viewFrame = viewFrame;
-    if (self.menuView) {
-        [self viewDidLayoutSubviews];
-    }
-}
+//- (void)setViewFrame:(CGRect)viewFrame {
+//    _viewFrame = viewFrame;
+//    if (self.menuView) {
+//        [self viewDidLayoutSubviews];
+//    }
+//}
 
 #pragma mark - Private Methods
 
@@ -127,12 +133,10 @@
     _titleColorSelected = WMTitleColorSelected;
     _titleSizeNormal    = WMTitleSizeNormal;
     _titleColorNormal   = WMTitleColorNormal;
-    
-    _menuBGColor   = WMMenuBGColor;
-    _menuHeight    = WMMenuHeight;
-    _menuItemWidth = WMMenuItemWidth;
-    
-    _memCache = [[NSCache alloc] init];
+    _menuBGColor        = WMMenuBGColor;
+    _menuHeight         = WMMenuHeight;
+    _menuItemWidth      = WMMenuItemWidth;
+    _memCache           = [[NSCache alloc] init];
 }
 
 // 包括宽高，子控制器视图 frame
@@ -156,14 +160,12 @@
 
 - (void)addScrollView {
     UIScrollView *scrollView = [[UIScrollView alloc] init];
-    
     scrollView.pagingEnabled = YES;
     scrollView.backgroundColor = [UIColor whiteColor];
     scrollView.delegate = self;
     scrollView.showsVerticalScrollIndicator = NO;
     scrollView.showsHorizontalScrollIndicator = NO;
     scrollView.bounces = self.bounces;
-    
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
 }
@@ -229,7 +231,7 @@
 - (void)addViewControllerAtIndex:(int)index {
     Class vcClass = self.viewControllerClasses[index];
     UIViewController *viewController = [[vcClass alloc] init];
-    if (self.values && self.keys) {
+    if (self.values && self.keys) {//TODO:https://github.com/wangmchn/WMPageController/issues/11 这个方法很棒的说
         [viewController setValue:self.values[index] forKey:self.keys[index]];
     }
     [self addChildViewController:viewController];
@@ -238,12 +240,12 @@
     [self.scrollView addSubview:viewController.view];
     [self.displayVC setObject:viewController forKey:@(index)];
     
-    [self backToPositionIfNeeded:viewController atIndex:index];
+//    [self backToPositionIfNeeded:viewController atIndex:index];
 }
 
 // 移除控制器，且从display中移除
 - (void)removeViewController:(UIViewController *)viewController atIndex:(NSInteger)index {
-    [self rememberPositionIfNeeded:viewController atIndex:index];
+//    [self rememberPositionIfNeeded:viewController atIndex:index];
     [viewController.view removeFromSuperview];
     [viewController willMoveToParentViewController:nil];
     [viewController removeFromParentViewController];
@@ -255,49 +257,49 @@
     }
 }
 
-- (void)backToPositionIfNeeded:(UIViewController *)controller atIndex:(NSInteger)index {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored"-Wdeprecated-declarations"
-    if (!self.rememberLocation) return;
-#pragma clang diagnostic pop
-    if ([self.memCache objectForKey:@(index)]) return;
-    UIScrollView *scrollView = [self isKindOfScrollViewController:controller];
-    if (scrollView) {
-        NSValue *pointValue = self.posRecords[@(index)];
-        if (pointValue) {
-            CGPoint pos = [pointValue CGPointValue];
-            // 奇怪的现象，我发现 collectionView 的 contentSize 是 {0, 0};
-            [scrollView setContentOffset:pos];
-        }
-    }
-}
+//- (void)backToPositionIfNeeded:(UIViewController *)controller atIndex:(NSInteger)index {
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored"-Wdeprecated-declarations"
+//    if (!self.rememberLocation) return;
+//#pragma clang diagnostic pop
+//    if ([self.memCache objectForKey:@(index)]) return;
+//    UIScrollView *scrollView = [self isKindOfScrollViewController:controller];
+//    if (scrollView) {
+//        NSValue *pointValue = self.posRecords[@(index)];
+//        if (pointValue) {
+//            CGPoint pos = [pointValue CGPointValue];
+//            // 奇怪的现象，我发现 collectionView 的 contentSize 是 {0, 0};
+//            [scrollView setContentOffset:pos];
+//        }
+//    }
+//}
 
-- (void)rememberPositionIfNeeded:(UIViewController *)controller atIndex:(NSInteger)index {
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored"-Wdeprecated-declarations"
-    if (!self.rememberLocation) return;
-#pragma clang diagnostic pop
-    UIScrollView *scrollView = [self isKindOfScrollViewController:controller];
-    if (scrollView) {
-        CGPoint pos = scrollView.contentOffset;
-        self.posRecords[@(index)] = [NSValue valueWithCGPoint:pos];
-    }
-}
+//- (void)rememberPositionIfNeeded:(UIViewController *)controller atIndex:(NSInteger)index {
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored"-Wdeprecated-declarations"
+//    if (!self.rememberLocation) return;
+//#pragma clang diagnostic pop
+//    UIScrollView *scrollView = [self isKindOfScrollViewController:controller];
+//    if (scrollView) {
+//        CGPoint pos = scrollView.contentOffset;
+//        self.posRecords[@(index)] = [NSValue valueWithCGPoint:pos];
+//    }
+//}
 
-- (UIScrollView *)isKindOfScrollViewController:(UIViewController *)controller {
-    UIScrollView *scrollView = nil;
-    if ([controller.view isKindOfClass:[UIScrollView class]]) {
-        // Controller的view是scrollView的子类(UITableViewController/UIViewController替换view为scrollView)
-        scrollView = (UIScrollView *)controller.view;
-    } else if (controller.view.subviews.count >= 1) {
-        // Controller的view的subViews[0]存在且是scrollView的子类，并且frame等与view得frame(UICollectionViewController/UIViewController添加UIScrollView)
-        UIView *view = controller.view.subviews[0];
-        if ([view isKindOfClass:[UIScrollView class]]) {
-            scrollView = (UIScrollView *)view;
-        }
-    }
-    return scrollView;
-}
+//- (UIScrollView *)isKindOfScrollViewController:(UIViewController *)controller {
+//    UIScrollView *scrollView = nil;
+//    if ([controller.view isKindOfClass:[UIScrollView class]]) {
+//        // Controller的view是scrollView的子类(UITableViewController/UIViewController替换view为scrollView)
+//        scrollView = (UIScrollView *)controller.view;
+//    } else if (controller.view.subviews.count >= 1) {
+//        // Controller的view的subViews[0]存在且是scrollView的子类，并且frame等与view得frame(UICollectionViewController/UIViewController添加UIScrollView)
+//        UIView *view = controller.view.subviews[0];
+//        if ([view isKindOfClass:[UIScrollView class]]) {
+//            scrollView = (UIScrollView *)view;
+//        }
+//    }
+//    return scrollView;
+//}
 
 - (BOOL)isInScreen:(CGRect)frame {
     CGFloat x = frame.origin.x;
@@ -452,6 +454,3 @@
 }
 
 @end
-// 版权属于原作者
-// http://code4app.com (cn) http://code4app.net (en)
-// 发布代码于最专业的源码分享网站: Code4App.com

@@ -45,6 +45,7 @@ typedef NS_ENUM(NSUInteger, WMPageControllerCachePolicy){
  *  Titles of view controllers in page controller. Use `NSString`.
  */
 @property (nonatomic, copy) NSArray *titles;
+
 @property (nonatomic, strong, readonly) UIViewController *currentViewController;
 
 /**
