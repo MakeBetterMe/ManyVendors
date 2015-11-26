@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2os-LI-BPF">
+                                <rect key="frame" x="0.0" y="504" width="320" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYE-IC-7fR">
+                                        <rect key="frame" x="272" y="17" width="40" height="30"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="428-Su-bxW"/>
+                                        </constraints>
+                                        <state key="normal" title="发送">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VGY-Oj-egi"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RWC-cj-MkS">
+                                        <rect key="frame" x="8" y="14" width="240" height="36"/>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.94948197288304259" green="0.71349574761328438" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="RWC-cj-MkS" firstAttribute="centerY" secondItem="2os-LI-BPF" secondAttribute="centerY" id="3fi-Q7-t69"/>
+                                    <constraint firstItem="VYE-IC-7fR" firstAttribute="leading" secondItem="RWC-cj-MkS" secondAttribute="trailing" constant="24" id="CWi-fE-ywP"/>
+                                    <constraint firstItem="VYE-IC-7fR" firstAttribute="centerY" secondItem="2os-LI-BPF" secondAttribute="centerY" id="VFF-44-ZRN"/>
+                                    <constraint firstAttribute="trailing" secondItem="VYE-IC-7fR" secondAttribute="trailing" constant="8" id="a1P-ba-QaY"/>
+                                    <constraint firstItem="RWC-cj-MkS" firstAttribute="leading" secondItem="2os-LI-BPF" secondAttribute="leading" constant="8" id="auv-FV-yt3"/>
+                                    <constraint firstAttribute="height" constant="64" id="l5W-hW-O92"/>
+                                    <constraint firstAttribute="bottom" secondItem="RWC-cj-MkS" secondAttribute="bottom" constant="14" id="s2H-vH-bKW"/>
+                                    <constraint firstItem="RWC-cj-MkS" firstAttribute="top" secondItem="2os-LI-BPF" secondAttribute="top" constant="14" id="sO8-OV-DQE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2os-LI-BPF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W9K-7d-YAq"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2os-LI-BPF" secondAttribute="bottom" id="rrY-lf-Z1z"/>
+                            <constraint firstAttribute="trailing" secondItem="2os-LI-BPF" secondAttribute="trailing" id="vK2-Xf-FBb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backView" destination="2os-LI-BPF" id="LgN-Nf-s6W"/>
+                        <outlet property="backViewHeightConstrant" destination="l5W-hW-O92" id="Z2z-h3-u75"/>
+                        <outlet property="inputTextView" destination="RWC-cj-MkS" id="IAe-fN-gfS"/>
+                        <outlet property="sendButton" destination="VYE-IC-7fR" id="vk9-5B-Ly0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="343"/>
+        </scene>
+    </scenes>
+</document>
