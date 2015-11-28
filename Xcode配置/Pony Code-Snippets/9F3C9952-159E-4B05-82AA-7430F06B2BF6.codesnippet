@@ -3,19 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>selfInit</string>
+	<string>@selfinit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>self = [super init];
-if (!self) {
-    return nil;
+if (self) {
+    &lt;##&gt;
 }
-
-&lt;#initializations#&gt;
-
 return self;</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>9F3C9952-159E-4B05-82AA-7430F06B2BF6</string>
@@ -28,6 +25,6 @@ return self;</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

@@ -9,7 +9,7 @@
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic,strong)</string>
+	<string>@property (nonatomic,strong) </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>2766CE5E-31C5-496D-A67C-59F4AC621324</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -21,6 +21,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

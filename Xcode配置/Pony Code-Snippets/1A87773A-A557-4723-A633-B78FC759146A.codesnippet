@@ -3,24 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@strongSelf</string>
+	<string>typedef ns_enum</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassImplementation</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>__strong __typeof(&lt;#weakSelf#&gt;)strongSelf = &lt;#weakSelf#&gt;;</string>
+	<string>typedef NS_ENUM(NSInteger,&lt;##&gt;){
+    
+};</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B1654F43-15E1-4EF7-91DB-6CA77FFF912A</string>
+	<string>1A87773A-A557-4723-A633-B78FC759146A</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C-Plus-Plus</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>strongSelf</string>
+	<string>OC-Enum</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>@strongSelf</string>
+	<string>OC-Enum</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
