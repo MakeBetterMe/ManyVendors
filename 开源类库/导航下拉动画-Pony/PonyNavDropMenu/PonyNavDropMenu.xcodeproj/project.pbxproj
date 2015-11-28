@@ -1,0 +1,533 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F6C814C61C0942F700E27FE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C814C51C0942F700E27FE8 /* main.m */; };
+		F6C814C91C0942F700E27FE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C814C81C0942F700E27FE8 /* AppDelegate.m */; };
+		F6C814CC1C0942F700E27FE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C814CB1C0942F700E27FE8 /* ViewController.m */; };
+		F6C814CF1C0942F700E27FE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C814CD1C0942F700E27FE8 /* Main.storyboard */; };
+		F6C814D11C0942F700E27FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6C814D01C0942F700E27FE8 /* Assets.xcassets */; };
+		F6C814D41C0942F700E27FE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C814D21C0942F700E27FE8 /* LaunchScreen.storyboard */; };
+		F6C814DF1C0942F700E27FE8 /* PonyNavDropMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C814DE1C0942F700E27FE8 /* PonyNavDropMenuTests.m */; };
+		F6C814EA1C0942F700E27FE8 /* PonyNavDropMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C814E91C0942F700E27FE8 /* PonyNavDropMenuUITests.m */; };
+		F6C814F91C09478C00E27FE8 /* PonyDropNavMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C814F81C09478C00E27FE8 /* PonyDropNavMenu.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6C814DB1C0942F700E27FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6C814B91C0942F700E27FE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C814C01C0942F700E27FE8;
+			remoteInfo = PonyNavDropMenu;
+		};
+		F6C814E61C0942F700E27FE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6C814B91C0942F700E27FE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C814C01C0942F700E27FE8;
+			remoteInfo = PonyNavDropMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F6C814C11C0942F700E27FE8 /* PonyNavDropMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PonyNavDropMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C814C51C0942F700E27FE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6C814C71C0942F700E27FE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6C814C81C0942F700E27FE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6C814CA1C0942F700E27FE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6C814CB1C0942F700E27FE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6C814CE1C0942F700E27FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6C814D01C0942F700E27FE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6C814D31C0942F700E27FE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6C814D51C0942F700E27FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C814DA1C0942F700E27FE8 /* PonyNavDropMenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PonyNavDropMenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C814DE1C0942F700E27FE8 /* PonyNavDropMenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PonyNavDropMenuTests.m; sourceTree = "<group>"; };
+		F6C814E01C0942F700E27FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C814E51C0942F700E27FE8 /* PonyNavDropMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PonyNavDropMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C814E91C0942F700E27FE8 /* PonyNavDropMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PonyNavDropMenuUITests.m; sourceTree = "<group>"; };
+		F6C814EB1C0942F700E27FE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C814F71C09478C00E27FE8 /* PonyDropNavMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyDropNavMenu.h; sourceTree = "<group>"; };
+		F6C814F81C09478C00E27FE8 /* PonyDropNavMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonyDropNavMenu.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6C814BE1C0942F700E27FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C814D71C0942F700E27FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C814E21C0942F700E27FE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F6C814B81C0942F700E27FE8 = {
+			isa = PBXGroup;
+			children = (
+				F6C814C31C0942F700E27FE8 /* PonyNavDropMenu */,
+				F6C814DD1C0942F700E27FE8 /* PonyNavDropMenuTests */,
+				F6C814E81C0942F700E27FE8 /* PonyNavDropMenuUITests */,
+				F6C814C21C0942F700E27FE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F6C814C21C0942F700E27FE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6C814C11C0942F700E27FE8 /* PonyNavDropMenu.app */,
+				F6C814DA1C0942F700E27FE8 /* PonyNavDropMenuTests.xctest */,
+				F6C814E51C0942F700E27FE8 /* PonyNavDropMenuUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6C814C31C0942F700E27FE8 /* PonyNavDropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F6C814FA1C09479200E27FE8 /* PonyNavDropMenu */,
+				F6C814C71C0942F700E27FE8 /* AppDelegate.h */,
+				F6C814C81C0942F700E27FE8 /* AppDelegate.m */,
+				F6C814CA1C0942F700E27FE8 /* ViewController.h */,
+				F6C814CB1C0942F700E27FE8 /* ViewController.m */,
+				F6C814CD1C0942F700E27FE8 /* Main.storyboard */,
+				F6C814D01C0942F700E27FE8 /* Assets.xcassets */,
+				F6C814D21C0942F700E27FE8 /* LaunchScreen.storyboard */,
+				F6C814D51C0942F700E27FE8 /* Info.plist */,
+				F6C814C41C0942F700E27FE8 /* Supporting Files */,
+			);
+			path = PonyNavDropMenu;
+			sourceTree = "<group>";
+		};
+		F6C814C41C0942F700E27FE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C814C51C0942F700E27FE8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C814DD1C0942F700E27FE8 /* PonyNavDropMenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6C814DE1C0942F700E27FE8 /* PonyNavDropMenuTests.m */,
+				F6C814E01C0942F700E27FE8 /* Info.plist */,
+			);
+			path = PonyNavDropMenuTests;
+			sourceTree = "<group>";
+		};
+		F6C814E81C0942F700E27FE8 /* PonyNavDropMenuUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6C814E91C0942F700E27FE8 /* PonyNavDropMenuUITests.m */,
+				F6C814EB1C0942F700E27FE8 /* Info.plist */,
+			);
+			path = PonyNavDropMenuUITests;
+			sourceTree = "<group>";
+		};
+		F6C814FA1C09479200E27FE8 /* PonyNavDropMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F6C814F71C09478C00E27FE8 /* PonyDropNavMenu.h */,
+				F6C814F81C09478C00E27FE8 /* PonyDropNavMenu.m */,
+			);
+			name = PonyNavDropMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6C814C01C0942F700E27FE8 /* PonyNavDropMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C814EE1C0942F700E27FE8 /* Build configuration list for PBXNativeTarget "PonyNavDropMenu" */;
+			buildPhases = (
+				F6C814BD1C0942F700E27FE8 /* Sources */,
+				F6C814BE1C0942F700E27FE8 /* Frameworks */,
+				F6C814BF1C0942F700E27FE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PonyNavDropMenu;
+			productName = PonyNavDropMenu;
+			productReference = F6C814C11C0942F700E27FE8 /* PonyNavDropMenu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6C814D91C0942F700E27FE8 /* PonyNavDropMenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C814F11C0942F700E27FE8 /* Build configuration list for PBXNativeTarget "PonyNavDropMenuTests" */;
+			buildPhases = (
+				F6C814D61C0942F700E27FE8 /* Sources */,
+				F6C814D71C0942F700E27FE8 /* Frameworks */,
+				F6C814D81C0942F700E27FE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6C814DC1C0942F700E27FE8 /* PBXTargetDependency */,
+			);
+			name = PonyNavDropMenuTests;
+			productName = PonyNavDropMenuTests;
+			productReference = F6C814DA1C0942F700E27FE8 /* PonyNavDropMenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6C814E41C0942F700E27FE8 /* PonyNavDropMenuUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C814F41C0942F700E27FE8 /* Build configuration list for PBXNativeTarget "PonyNavDropMenuUITests" */;
+			buildPhases = (
+				F6C814E11C0942F700E27FE8 /* Sources */,
+				F6C814E21C0942F700E27FE8 /* Frameworks */,
+				F6C814E31C0942F700E27FE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6C814E71C0942F700E27FE8 /* PBXTargetDependency */,
+			);
+			name = PonyNavDropMenuUITests;
+			productName = PonyNavDropMenuUITests;
+			productReference = F6C814E51C0942F700E27FE8 /* PonyNavDropMenuUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6C814B91C0942F700E27FE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Pony;
+				TargetAttributes = {
+					F6C814C01C0942F700E27FE8 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					F6C814D91C0942F700E27FE8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = F6C814C01C0942F700E27FE8;
+					};
+					F6C814E41C0942F700E27FE8 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = F6C814C01C0942F700E27FE8;
+					};
+				};
+			};
+			buildConfigurationList = F6C814BC1C0942F700E27FE8 /* Build configuration list for PBXProject "PonyNavDropMenu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6C814B81C0942F700E27FE8;
+			productRefGroup = F6C814C21C0942F700E27FE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6C814C01C0942F700E27FE8 /* PonyNavDropMenu */,
+				F6C814D91C0942F700E27FE8 /* PonyNavDropMenuTests */,
+				F6C814E41C0942F700E27FE8 /* PonyNavDropMenuUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6C814BF1C0942F700E27FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C814D41C0942F700E27FE8 /* LaunchScreen.storyboard in Resources */,
+				F6C814D11C0942F700E27FE8 /* Assets.xcassets in Resources */,
+				F6C814CF1C0942F700E27FE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C814D81C0942F700E27FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C814E31C0942F700E27FE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6C814BD1C0942F700E27FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C814CC1C0942F700E27FE8 /* ViewController.m in Sources */,
+				F6C814F91C09478C00E27FE8 /* PonyDropNavMenu.m in Sources */,
+				F6C814C91C0942F700E27FE8 /* AppDelegate.m in Sources */,
+				F6C814C61C0942F700E27FE8 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C814D61C0942F700E27FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C814DF1C0942F700E27FE8 /* PonyNavDropMenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C814E11C0942F700E27FE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C814EA1C0942F700E27FE8 /* PonyNavDropMenuUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6C814DC1C0942F700E27FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C814C01C0942F700E27FE8 /* PonyNavDropMenu */;
+			targetProxy = F6C814DB1C0942F700E27FE8 /* PBXContainerItemProxy */;
+		};
+		F6C814E71C0942F700E27FE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C814C01C0942F700E27FE8 /* PonyNavDropMenu */;
+			targetProxy = F6C814E61C0942F700E27FE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6C814CD1C0942F700E27FE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C814CE1C0942F700E27FE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6C814D21C0942F700E27FE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6C814D31C0942F700E27FE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6C814EC1C0942F700E27FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6C814ED1C0942F700E27FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6C814EF1C0942F700E27FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PonyNavDropMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNavDropMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6C814F01C0942F700E27FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PonyNavDropMenu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNavDropMenu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F6C814F21C0942F700E27FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PonyNavDropMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNavDropMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PonyNavDropMenu.app/PonyNavDropMenu";
+			};
+			name = Debug;
+		};
+		F6C814F31C0942F700E27FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PonyNavDropMenuTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNavDropMenuTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PonyNavDropMenu.app/PonyNavDropMenu";
+			};
+			name = Release;
+		};
+		F6C814F51C0942F700E27FE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PonyNavDropMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNavDropMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PonyNavDropMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F6C814F61C0942F700E27FE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PonyNavDropMenuUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNavDropMenuUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PonyNavDropMenu;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6C814BC1C0942F700E27FE8 /* Build configuration list for PBXProject "PonyNavDropMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C814EC1C0942F700E27FE8 /* Debug */,
+				F6C814ED1C0942F700E27FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6C814EE1C0942F700E27FE8 /* Build configuration list for PBXNativeTarget "PonyNavDropMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C814EF1C0942F700E27FE8 /* Debug */,
+				F6C814F01C0942F700E27FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C814F11C0942F700E27FE8 /* Build configuration list for PBXNativeTarget "PonyNavDropMenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C814F21C0942F700E27FE8 /* Debug */,
+				F6C814F31C0942F700E27FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C814F41C0942F700E27FE8 /* Build configuration list for PBXNativeTarget "PonyNavDropMenuUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C814F51C0942F700E27FE8 /* Debug */,
+				F6C814F61C0942F700E27FE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6C814B91C0942F700E27FE8 /* Project object */;
+}
