@@ -1,6 +1,7 @@
 # ManyVendors
 
 ##类库的合集
+### 不错的，中文介绍 http://www.52codes.net/article/465.html
 ###https://github.com/MakeBetterMe/awesome-ios
 
 ###https://github.com/MakeBetterMe/iOS_Vendor
