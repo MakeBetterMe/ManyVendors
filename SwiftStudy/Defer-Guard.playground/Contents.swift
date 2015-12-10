@@ -83,3 +83,17 @@ var s = Student()
 print(s)
 
 
+func testOptionalValue(name:String?) -> String{
+    guard let name2 = name else{
+        return ""
+    }
+    return "HELLO " + name2
+}
+
+print(testOptionalValue("王云鹏"))
+
+
+
+
+
+
