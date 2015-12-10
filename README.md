@@ -1,6 +1,8 @@
 # ManyVendors
 
 ##类库的合集
+#### http://www.cocoachina.com/ios/20151210/14635.html 【资源集合】94个iOS开发资源推荐，帮你加速应用开发
+
 ### 不错的，中文介绍 http://www.52codes.net/article/465.html
 ###https://github.com/MakeBetterMe/awesome-ios
 
