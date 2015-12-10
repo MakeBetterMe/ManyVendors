@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE2B64C33D3987DF013DC92C /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 783AF43AA7A909E1AB627AFB /* libPods.a */; };
+		F6DF0C801C19193D00C5062A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0C7F1C19193D00C5062A /* main.m */; };
+		F6DF0C831C19193D00C5062A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0C821C19193D00C5062A /* AppDelegate.m */; };
+		F6DF0C861C19193D00C5062A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0C851C19193D00C5062A /* ViewController.m */; };
+		F6DF0C891C19193D00C5062A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DF0C871C19193D00C5062A /* Main.storyboard */; };
+		F6DF0C8B1C19193D00C5062A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6DF0C8A1C19193D00C5062A /* Assets.xcassets */; };
+		F6DF0C8E1C19193D00C5062A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DF0C8C1C19193D00C5062A /* LaunchScreen.storyboard */; };
+		F6DF0C991C19193D00C5062A /* PonyNetWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0C981C19193D00C5062A /* PonyNetWorkTests.m */; };
+		F6DF0CA41C19193D00C5062A /* PonyNetWorkUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0CA31C19193D00C5062A /* PonyNetWorkUITests.m */; };
+		F6DF0CB61C191ABC00C5062A /* PonyNetAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0CB51C191ABC00C5062A /* PonyNetAgent.m */; };
+		F6DF0CB91C191B2300C5062A /* PonyNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0CB81C191B2300C5062A /* PonyNetManager.m */; };
+		F6DF0CBD1C191DEE00C5062A /* PonyUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0CBC1C191DEE00C5062A /* PonyUploadParam.m */; };
+		F6DF0CC11C19212A00C5062A /* PonyNetItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DF0CC01C19212A00C5062A /* PonyNetItem.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6DF0C951C19193D00C5062A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DF0C731C19193C00C5062A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6DF0C7A1C19193D00C5062A;
+			remoteInfo = PonyNetWork;
+		};
+		F6DF0CA01C19193D00C5062A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DF0C731C19193C00C5062A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6DF0C7A1C19193D00C5062A;
+			remoteInfo = PonyNetWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CA6C2E515F420264C27BD6A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		391DA83C5FE438E28272BDA5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		783AF43AA7A909E1AB627AFB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DF0C7B1C19193D00C5062A /* PonyNetWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PonyNetWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DF0C7F1C19193D00C5062A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6DF0C811C19193D00C5062A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F6DF0C821C19193D00C5062A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F6DF0C841C19193D00C5062A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F6DF0C851C19193D00C5062A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F6DF0C881C19193D00C5062A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F6DF0C8A1C19193D00C5062A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F6DF0C8D1C19193D00C5062A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F6DF0C8F1C19193D00C5062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DF0C941C19193D00C5062A /* PonyNetWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PonyNetWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DF0C981C19193D00C5062A /* PonyNetWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PonyNetWorkTests.m; sourceTree = "<group>"; };
+		F6DF0C9A1C19193D00C5062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DF0C9F1C19193D00C5062A /* PonyNetWorkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PonyNetWorkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6DF0CA31C19193D00C5062A /* PonyNetWorkUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PonyNetWorkUITests.m; sourceTree = "<group>"; };
+		F6DF0CA51C19193D00C5062A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6DF0CB41C191ABC00C5062A /* PonyNetAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyNetAgent.h; sourceTree = "<group>"; };
+		F6DF0CB51C191ABC00C5062A /* PonyNetAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonyNetAgent.m; sourceTree = "<group>"; };
+		F6DF0CB71C191B2300C5062A /* PonyNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyNetManager.h; sourceTree = "<group>"; };
+		F6DF0CB81C191B2300C5062A /* PonyNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonyNetManager.m; sourceTree = "<group>"; };
+		F6DF0CBA1C191CED00C5062A /* PonyNetDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyNetDelegate.h; sourceTree = "<group>"; };
+		F6DF0CBB1C191DEE00C5062A /* PonyUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyUploadParam.h; sourceTree = "<group>"; };
+		F6DF0CBC1C191DEE00C5062A /* PonyUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonyUploadParam.m; sourceTree = "<group>"; };
+		F6DF0CBE1C191F5B00C5062A /* PonyNetDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyNetDefine.h; sourceTree = "<group>"; };
+		F6DF0CBF1C19212A00C5062A /* PonyNetItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PonyNetItem.h; sourceTree = "<group>"; };
+		F6DF0CC01C19212A00C5062A /* PonyNetItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PonyNetItem.m; sourceTree = "<group>"; };
+		F6DF0CC21C1926A800C5062A /* NetUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetUrl.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6DF0C781C19193D00C5062A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE2B64C33D3987DF013DC92C /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DF0C911C19193D00C5062A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DF0C9C1C19193D00C5062A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		404BFB6E24615AEEDEA7D8C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				783AF43AA7A909E1AB627AFB /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		67BA0CEA393EC37BB3923D4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0CA6C2E515F420264C27BD6A /* Pods.debug.xcconfig */,
+				391DA83C5FE438E28272BDA5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6DF0C721C19193C00C5062A = {
+			isa = PBXGroup;
+			children = (
+				F6DF0C7D1C19193D00C5062A /* PonyNetWork */,
+				F6DF0C971C19193D00C5062A /* PonyNetWorkTests */,
+				F6DF0CA21C19193D00C5062A /* PonyNetWorkUITests */,
+				F6DF0C7C1C19193D00C5062A /* Products */,
+				67BA0CEA393EC37BB3923D4D /* Pods */,
+				404BFB6E24615AEEDEA7D8C0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F6DF0C7C1C19193D00C5062A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF0C7B1C19193D00C5062A /* PonyNetWork.app */,
+				F6DF0C941C19193D00C5062A /* PonyNetWorkTests.xctest */,
+				F6DF0C9F1C19193D00C5062A /* PonyNetWorkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6DF0C7D1C19193D00C5062A /* PonyNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF0CB21C191A0200C5062A /* PonyNetFrameWork */,
+				F6DF0C811C19193D00C5062A /* AppDelegate.h */,
+				F6DF0C821C19193D00C5062A /* AppDelegate.m */,
+				F6DF0C841C19193D00C5062A /* ViewController.h */,
+				F6DF0C851C19193D00C5062A /* ViewController.m */,
+				F6DF0C871C19193D00C5062A /* Main.storyboard */,
+				F6DF0C8A1C19193D00C5062A /* Assets.xcassets */,
+				F6DF0C8C1C19193D00C5062A /* LaunchScreen.storyboard */,
+				F6DF0C8F1C19193D00C5062A /* Info.plist */,
+				F6DF0C7E1C19193D00C5062A /* Supporting Files */,
+			);
+			path = PonyNetWork;
+			sourceTree = "<group>";
+		};
+		F6DF0C7E1C19193D00C5062A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF0C7F1C19193D00C5062A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6DF0C971C19193D00C5062A /* PonyNetWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF0C981C19193D00C5062A /* PonyNetWorkTests.m */,
+				F6DF0C9A1C19193D00C5062A /* Info.plist */,
+			);
+			path = PonyNetWorkTests;
+			sourceTree = "<group>";
+		};
+		F6DF0CA21C19193D00C5062A /* PonyNetWorkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF0CA31C19193D00C5062A /* PonyNetWorkUITests.m */,
+				F6DF0CA51C19193D00C5062A /* Info.plist */,
+			);
+			path = PonyNetWorkUITests;
+			sourceTree = "<group>";
+		};
+		F6DF0CB21C191A0200C5062A /* PonyNetFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				F6DF0CB41C191ABC00C5062A /* PonyNetAgent.h */,
+				F6DF0CB51C191ABC00C5062A /* PonyNetAgent.m */,
+				F6DF0CB71C191B2300C5062A /* PonyNetManager.h */,
+				F6DF0CB81C191B2300C5062A /* PonyNetManager.m */,
+				F6DF0CBA1C191CED00C5062A /* PonyNetDelegate.h */,
+				F6DF0CBB1C191DEE00C5062A /* PonyUploadParam.h */,
+				F6DF0CBC1C191DEE00C5062A /* PonyUploadParam.m */,
+				F6DF0CBE1C191F5B00C5062A /* PonyNetDefine.h */,
+				F6DF0CBF1C19212A00C5062A /* PonyNetItem.h */,
+				F6DF0CC01C19212A00C5062A /* PonyNetItem.m */,
+				F6DF0CC21C1926A800C5062A /* NetUrl.h */,
+			);
+			path = PonyNetFrameWork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6DF0C7A1C19193D00C5062A /* PonyNetWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DF0CA81C19193D00C5062A /* Build configuration list for PBXNativeTarget "PonyNetWork" */;
+			buildPhases = (
+				87AAB976A0A1539CAE965683 /* Check Pods Manifest.lock */,
+				F6DF0C771C19193D00C5062A /* Sources */,
+				F6DF0C781C19193D00C5062A /* Frameworks */,
+				F6DF0C791C19193D00C5062A /* Resources */,
+				201DC073E30159F0AEAD619B /* Embed Pods Frameworks */,
+				8935D3DD2395172369942081 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PonyNetWork;
+			productName = PonyNetWork;
+			productReference = F6DF0C7B1C19193D00C5062A /* PonyNetWork.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6DF0C931C19193D00C5062A /* PonyNetWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DF0CAB1C19193D00C5062A /* Build configuration list for PBXNativeTarget "PonyNetWorkTests" */;
+			buildPhases = (
+				F6DF0C901C19193D00C5062A /* Sources */,
+				F6DF0C911C19193D00C5062A /* Frameworks */,
+				F6DF0C921C19193D00C5062A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6DF0C961C19193D00C5062A /* PBXTargetDependency */,
+			);
+			name = PonyNetWorkTests;
+			productName = PonyNetWorkTests;
+			productReference = F6DF0C941C19193D00C5062A /* PonyNetWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F6DF0C9E1C19193D00C5062A /* PonyNetWorkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6DF0CAE1C19193D00C5062A /* Build configuration list for PBXNativeTarget "PonyNetWorkUITests" */;
+			buildPhases = (
+				F6DF0C9B1C19193D00C5062A /* Sources */,
+				F6DF0C9C1C19193D00C5062A /* Frameworks */,
+				F6DF0C9D1C19193D00C5062A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6DF0CA11C19193D00C5062A /* PBXTargetDependency */,
+			);
+			name = PonyNetWorkUITests;
+			productName = PonyNetWorkUITests;
+			productReference = F6DF0C9F1C19193D00C5062A /* PonyNetWorkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6DF0C731C19193C00C5062A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = Pony;
+				TargetAttributes = {
+					F6DF0C7A1C19193D00C5062A = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					F6DF0C931C19193D00C5062A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = F6DF0C7A1C19193D00C5062A;
+					};
+					F6DF0C9E1C19193D00C5062A = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = F6DF0C7A1C19193D00C5062A;
+					};
+				};
+			};
+			buildConfigurationList = F6DF0C761C19193C00C5062A /* Build configuration list for PBXProject "PonyNetWork" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F6DF0C721C19193C00C5062A;
+			productRefGroup = F6DF0C7C1C19193D00C5062A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6DF0C7A1C19193D00C5062A /* PonyNetWork */,
+				F6DF0C931C19193D00C5062A /* PonyNetWorkTests */,
+				F6DF0C9E1C19193D00C5062A /* PonyNetWorkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6DF0C791C19193D00C5062A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DF0C8E1C19193D00C5062A /* LaunchScreen.storyboard in Resources */,
+				F6DF0C8B1C19193D00C5062A /* Assets.xcassets in Resources */,
+				F6DF0C891C19193D00C5062A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DF0C921C19193D00C5062A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DF0C9D1C19193D00C5062A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		201DC073E30159F0AEAD619B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87AAB976A0A1539CAE965683 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8935D3DD2395172369942081 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6DF0C771C19193D00C5062A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DF0C861C19193D00C5062A /* ViewController.m in Sources */,
+				F6DF0CB61C191ABC00C5062A /* PonyNetAgent.m in Sources */,
+				F6DF0CC11C19212A00C5062A /* PonyNetItem.m in Sources */,
+				F6DF0C831C19193D00C5062A /* AppDelegate.m in Sources */,
+				F6DF0C801C19193D00C5062A /* main.m in Sources */,
+				F6DF0CBD1C191DEE00C5062A /* PonyUploadParam.m in Sources */,
+				F6DF0CB91C191B2300C5062A /* PonyNetManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DF0C901C19193D00C5062A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DF0C991C19193D00C5062A /* PonyNetWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6DF0C9B1C19193D00C5062A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6DF0CA41C19193D00C5062A /* PonyNetWorkUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6DF0C961C19193D00C5062A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6DF0C7A1C19193D00C5062A /* PonyNetWork */;
+			targetProxy = F6DF0C951C19193D00C5062A /* PBXContainerItemProxy */;
+		};
+		F6DF0CA11C19193D00C5062A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6DF0C7A1C19193D00C5062A /* PonyNetWork */;
+			targetProxy = F6DF0CA01C19193D00C5062A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6DF0C871C19193D00C5062A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6DF0C881C19193D00C5062A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F6DF0C8C1C19193D00C5062A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6DF0C8D1C19193D00C5062A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6DF0CA61C19193D00C5062A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6DF0CA71C19193D00C5062A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6DF0CA91C19193D00C5062A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA6C2E515F420264C27BD6A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PonyNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F6DF0CAA1C19193D00C5062A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 391DA83C5FE438E28272BDA5 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PonyNetWork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNetWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F6DF0CAC1C19193D00C5062A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PonyNetWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNetWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PonyNetWork.app/PonyNetWork";
+			};
+			name = Debug;
+		};
+		F6DF0CAD1C19193D00C5062A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PonyNetWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNetWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PonyNetWork.app/PonyNetWork";
+			};
+			name = Release;
+		};
+		F6DF0CAF1C19193D00C5062A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PonyNetWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNetWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PonyNetWork;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		F6DF0CB01C19193D00C5062A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PonyNetWorkUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pony.guanai.PonyNetWorkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PonyNetWork;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6DF0C761C19193C00C5062A /* Build configuration list for PBXProject "PonyNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DF0CA61C19193D00C5062A /* Debug */,
+				F6DF0CA71C19193D00C5062A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DF0CA81C19193D00C5062A /* Build configuration list for PBXNativeTarget "PonyNetWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DF0CA91C19193D00C5062A /* Debug */,
+				F6DF0CAA1C19193D00C5062A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DF0CAB1C19193D00C5062A /* Build configuration list for PBXNativeTarget "PonyNetWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DF0CAC1C19193D00C5062A /* Debug */,
+				F6DF0CAD1C19193D00C5062A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6DF0CAE1C19193D00C5062A /* Build configuration list for PBXNativeTarget "PonyNetWorkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6DF0CAF1C19193D00C5062A /* Debug */,
+				F6DF0CB01C19193D00C5062A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6DF0C731C19193C00C5062A /* Project object */;
+}
