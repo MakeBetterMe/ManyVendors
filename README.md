@@ -1,18 +1,14 @@
 # ManyVendors
 
 ##类库的合集
-#### http://www.cocoachina.com/ios/20151210/14635.html 【资源集合】94个iOS开发资源推荐，帮你加速应用开发
-
-### 不错的，中文介绍 http://www.52codes.net/article/465.html
-###https://github.com/MakeBetterMe/awesome-ios
-
-###https://github.com/MakeBetterMe/iOS_Vendor
-
-###1000知名库 https://github.com/MakeBetterMe/ios_top_1000
-
-###学习资料的合集  https://github.com/Aufree/trip-to-iOS
-
-###程序员不常用的热门第三方库，很少用，但功能极强 http://mp.weixin.qq.com/s?plg_nld=1&plg_uin=1&mid=400149126&idx=1&plg_nld=1&scene=22&plg_auth=1&__biz=MzA4MjI0NjczNQ%3D%3D&plg_dev=1&srcid=1029Yg695WUqXZnvU3H5t92I&plg_usr=1&plg_vkey=1&sn=bc6185d2b315c73f5349292611b2c8f9#wechat_redirect
+	1.有态度的iOS第三方资源聚合网站  http://www.ios122.com/
+	2.http://www.cocoachina.com/ios/20151210/14635.html 【资源集合】94个iOS开发资源推荐，帮你加速应用开发
+	3.不错的，中文介绍 http://www.52codes.net/article/465.html
+	4.https://github.com/MakeBetterMe/awesome-ios
+	5.https://github.com/MakeBetterMe/iOS_Vendor
+	6.1000知名库 https://github.com/MakeBetterMe/ios_top_1000
+	7.学习资料的合集  https://github.com/Aufree/trip-to-iOS
+	8.程序员不常用的热门第三方库，很少用，但功能极强 http://mp.weixin.qq.com/s?plg_nld=1&plg_uin=1&mid=400149126&idx=1&plg_nld=1&scene=22&plg_auth=1&__biz=MzA4MjI0NjczNQ%3D%3D&plg_dev=1&srcid=1029Yg695WUqXZnvU3H5t92I&plg_usr=1&plg_vkey=1&sn=bc6185d2b315c73f5349292611b2c8f9#wechat_redirect
 
 ##Animattion
 	1.http://code.cocoachina.com/view/128481 动画和特效demo合集
