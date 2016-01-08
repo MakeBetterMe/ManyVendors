@@ -15,8 +15,6 @@
 
 @interface PonyDropNavMenu : UIView
 
-
-
 @property (nonatomic,assign) NSInteger itemRowCount;/**<每行显示cell的数量，默认为1吧*/
 
 @property (nonatomic,strong) NSArray *dataArr; /**<数据源数组*/

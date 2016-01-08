@@ -20,9 +20,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     _menu = [[PonyDropNavMenu alloc]initWithWidth:[UIScreen mainScreen].bounds.size.width];
-    _menu.dataArr = @[@"1",@"2",@"3",@"4",@"5",@"6"];
+    _menu.dataArr = @[@"1号线",@"2号线",@"3",@"4",@"5",@"6"];
     _menu.itemHeight = 80;
-    _menu.itemRowCount = 2;
+    _menu.itemRowCount = 1;
     self.navigationController.navigationBar.translucent = NO;
     UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithTitle:@"show" style:UIBarButtonItemStylePlain target:self action:@selector(show)];
     self.navigationItem.leftBarButtonItem = item;
